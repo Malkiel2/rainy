@@ -23,8 +23,8 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
- //      tableView.delegate = self
-  //      tableView.dataSource = self
+       tableView.delegate = self
+        tableView.dataSource = self
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -37,8 +37,8 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-    //    let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath)
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath)
+        return cell
         
     }
 
