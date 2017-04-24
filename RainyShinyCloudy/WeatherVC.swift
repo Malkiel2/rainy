@@ -41,6 +41,11 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return cell
         
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 80.0;//Choose your custom row height
+    }
 
 
 }
