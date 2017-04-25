@@ -90,7 +90,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sib-id-ltN">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="photo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Sib-id-ltN">
                                                     <rect key="frame" x="16" y="18" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="hGL-Oh-hy1"/>
@@ -176,4 +176,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="photo.jpg" width="88" height="88"/>
+    </resources>
 </document>
