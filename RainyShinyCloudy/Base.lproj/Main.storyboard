@@ -90,7 +90,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sib-id-ltN">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear Mini" translatesAutoresizingMaskIntoConstraints="NO" id="Sib-id-ltN">
                                                     <rect key="frame" x="16" y="18" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="hGL-Oh-hy1"/>
@@ -98,7 +98,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="23w-Nm-ZNq">
-                                                    <rect key="frame" x="74" y="18" width="283" height="49"/>
+                                                    <rect key="frame" x="74" y="18" width="283" height="48.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hMN-S1-85S">
                                                             <rect key="frame" x="0.0" y="0.0" width="141.5" height="48.5"/>
@@ -175,4 +175,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Clear Mini" width="40" height="40"/>
+    </resources>
 </document>
