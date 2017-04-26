@@ -20,11 +20,17 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var currentWeatherImage: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     
+    var currentWeather = CurrentWeather()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       tableView.delegate = self
+        tableView.delegate = self
         tableView.dataSource = self
+        
+        currentWeather.downloadWeatherDetails {
+            self.updateMainUI()
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -45,6 +51,16 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
         return 80.0;//Choose your custom row height
+    }
+    
+    func updateMainUI() {
+        
+        dateLabel.text = currentWeather.date
+        currentTempLabel.text = "\(currentWeather.currentTemp)"
+        currentWeatherTypeLabel.text = currentWeather.weatherType
+        locationLabel.text = currentWeather.cityName
+        currentWeatherImage.image = UIImage(named: "Rain")
+        
     }
 
 
