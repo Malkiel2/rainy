@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -50,15 +51,15 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        return 80.0;//Choose your custom row height
+        return 80.0 //Choose your custom row height
     }
     
     func updateMainUI() {
         
         dateLabel.text = currentWeather.date
-        currentTempLabel.text = "\(currentWeather.currentTemp)"
-        currentWeatherTypeLabel.text = currentWeather.weatherType
+        currentTempLabel.text = String(currentWeather.currentTemp)
         locationLabel.text = currentWeather.cityName
+        currentWeatherTypeLabel.text = currentWeather.weatherType
         currentWeatherImage.image = UIImage(named: "Rain")
         
     }

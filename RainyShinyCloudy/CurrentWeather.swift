@@ -42,6 +42,8 @@ class CurrentWeather {
         }
         return _weatherType
     }
+    
+
 
     var currentTemp: Double {
         if _currentTemp == nil {
@@ -88,20 +90,6 @@ class CurrentWeather {
         }
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
 
 }
